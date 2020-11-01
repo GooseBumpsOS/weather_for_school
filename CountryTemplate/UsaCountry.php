@@ -17,6 +17,18 @@ class UsaCountry extends AbstractCountryTemplate
         return $this->constructMsg($placeName) . $temp . " in Fahrenheit";
     }
 
+    /**
+     * @return string
+     */
+    public function getPlaceLang(): string
+    {
+        return LangEnum::ENG;
+    }
+
+    /**
+     * @param string $placeName
+     * @return string
+     */
     private function constructMsg(string $placeName): string
     {
         return "Hello, temperature in $placeName is: ";

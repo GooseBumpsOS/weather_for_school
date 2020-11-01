@@ -1,6 +1,6 @@
 <?php
 
 
-abstract class AbstractCountryTemplate implements IWeatherBroadcaster, ITemperatureConverter
+abstract class AbstractCountryTemplate implements IWeatherBroadcaster, ITemperatureConverter, ILangBroadcaster
 {
 }

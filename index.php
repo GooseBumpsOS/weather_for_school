@@ -6,6 +6,7 @@ spl_autoload_register(static function ($className) {
         'CountryTemplate/',
         'CountryTemplate/Abstraction/',
         'WeatherApi/',
+        'Translate/',
         ''
     );
     //for each directory
@@ -18,6 +19,6 @@ spl_autoload_register(static function ($className) {
 });
 
 $weatherCompiler = new WeatherCompiler();
-$weatherCompiler->getWeatherMsg(new RussiaWeatherApi(), new UsaCountry());
+$weatherCompiler->getWeatherMsg(new RussiaWeatherApi(), new RusCountry());
 
 

@@ -22,6 +22,11 @@ class RusCountry extends AbstractCountryTemplate
         return $this->constructMsg($placeName) . $temp . " градуосв цельсия";
     }
 
+    public function getPlaceLang(): string
+    {
+        return LangEnum::RUS;
+    }
+
     /**
      * @param string $placeName
      * @return string

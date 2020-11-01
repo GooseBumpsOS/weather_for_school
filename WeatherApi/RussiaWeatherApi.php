@@ -21,6 +21,6 @@ class RussiaWeatherApi extends AbstractWeatherApi
 
     public function getPlaceName(): string
     {
-        return "Россия";
+        return "Russia";
     }
 }
